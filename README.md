@@ -2,15 +2,21 @@
   <a href="https://github.com/actions/typescript-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
 </p>
 
-# Create a JavaScript Action using TypeScript
+# Present ZAProxy results in GitHub Advanced Security
 
-Use this template to bootstrap the creation of a TypeScript action.:rocket:
+Use this GitHub Action together with GitHub Advanced Security to run a ZAProxy (DAST) scan on your application, and present the results in the GitHub Advanced Security UI.
+
+This Action
 
 This template includes compilation support, tests, a validation workflow, publishing, and versioning guidance.  
 
 If you are new, there's also a simpler introduction.  See the [Hello World JavaScript Action](https://github.com/actions/hello-world-javascript-action)
 
-## Create an action from this template
+## Use in production
+
+Click the `Use this Template` and provide the new repo details for your action
+
+## Use in feature branches
 
 Click the `Use this Template` and provide the new repo details for your action
 

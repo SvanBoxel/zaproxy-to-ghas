@@ -1,11 +1,5 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+name: 'Sebass van Boxel'
+description: 'Present ZAProxy results in GitHub Advanced Security'
 runs:
   using: 'node12'
   main: 'dist/index.js'
