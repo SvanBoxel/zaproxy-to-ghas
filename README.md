@@ -7,7 +7,7 @@ This Action leverages the official [zaproxy/action-baseline](https://github.com/
 ## Background
 GitHub Advanced Security utilizes the [SARIF (Static Analysis Results Interchange) format](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning) to present code scanning results of a wide range of [static code analysis tools](https://github.blog/2021-07-28-new-code-scanning-integrations-open-source-security-tools/). As DAST scans are not static they can't be directly mapped to individual lines in the original source file but only to a specific URL or endpoint of the application. 
 
-This Actions maps the DAST results of ZAProxy to SARIF on a best effort basis to ensure developers get the DAST-related information they need to make informed decision about the security maturity of an application. 
+This Actions maps the DAST results of ZAProxy to SARIF on a best effort basis to ensure developers get the DAST-related information they need to make informed decisions about the security risks in an application. 
 
 ## What is looks like
 
