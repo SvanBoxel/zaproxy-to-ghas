@@ -1,5 +1,8 @@
 name: 'Sebass van Boxel'
 description: 'Present ZAProxy results in GitHub Advanced Security'
+branding:
+  icon: 'lock'
+  color: 'gray-dark'
 runs:
   using: 'node12'
   main: 'dist/index.js'
