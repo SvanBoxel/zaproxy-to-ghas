@@ -17,7 +17,7 @@ const parse = (object: reportTypes.zapObject): reportTypes.report => {
           id: alert.alertRef.toString(),
           shortDescription: {text: alert.name},
           fullDescription: {
-            text: alert.desc.replace('<p>', '').replace('</p>', '')
+            text: alert.desc.replace(/<p>/g, '').replace(/<\/p>/g, '')
           },
           helpUri: `https://www.zaproxy.org/docs/alerts/${alert.alertRef}`,
           defaultConfiguration: {level: severity}
