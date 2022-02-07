@@ -30,7 +30,10 @@ const parse = (object) => {
                     text: alert.desc.replace(/<p>/g, '').replace(/<\/p>/g, '')
                 },
                 helpUri: `https://www.zaproxy.org/docs/alerts/${alert.alertRef}`,
-                defaultConfiguration: { level: severity }
+                defaultConfiguration: { level: severity },
+                properties: {
+                    tags: [`external/cwe/cwe-${alert.cweid}`]
+                }
             };
         });
         for (const [index] of alerts.entries()) {

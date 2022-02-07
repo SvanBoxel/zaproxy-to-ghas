@@ -13,6 +13,7 @@ export interface zapObjectAlert {
   desc: string
   riskdesc: string
   alertRef: number
+  cweid: string
   instances: zapObjectAlertInstance[]
 }
 
