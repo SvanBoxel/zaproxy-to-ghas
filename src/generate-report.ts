@@ -22,7 +22,7 @@ const parse = (object: reportTypes.zapObject): reportTypes.report => {
           helpUri: `https://www.zaproxy.org/docs/alerts/${alert.alertRef}`,
           defaultConfiguration: {level: severity},
           properties: {
-            tags: [ `external/cwe/cwe-${alert.cweid}`]
+            tags: [`external/cwe/cwe-${alert.cweid}`]
           }
         }
       })
@@ -69,6 +69,7 @@ const parse = (object: reportTypes.zapObject): reportTypes.report => {
                   uri: instance.uri
                     .replace(/(^\w+:|^)\/\//, '')
                     .replace(/\/$/, '')
+                    .replace(/:/g, '')
                 },
                 region: {
                   startLine: 1
