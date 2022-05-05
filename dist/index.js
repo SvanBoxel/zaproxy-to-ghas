@@ -70,6 +70,7 @@ const parse = (object) => {
                                     uri: instance.uri
                                         .replace(/(^\w+:|^)\/\//, '')
                                         .replace(/\/$/, '')
+                                        .replace(/:\d+/, '')
                                 },
                                 region: {
                                     startLine: 1
