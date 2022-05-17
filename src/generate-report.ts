@@ -69,7 +69,7 @@ const parse = (object: reportTypes.zapObject): reportTypes.report => {
                   uri: instance.uri
                     .replace(/(^\w+:|^)\/\//, '')
                     .replace(/\/$/, '')
-                    .replace(/:/g, '')
+                    .replace(/:\d+/, '')
                 },
                 region: {
                   startLine: 1
