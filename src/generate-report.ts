@@ -92,7 +92,7 @@ const parse = (object: reportTypes.zapObject): reportTypes.report => {
 
   return {
     $schema:
-      'https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json',
+      'https://json.schemastore.org/sarif-2.1.0.json',
     version: '2.1.0',
     runs: [
       {
